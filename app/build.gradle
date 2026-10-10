@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdk 28
         targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0.0"
         proguardFiles += 'proguard-rules.pro'
     }
 
@@ -46,16 +46,8 @@ android {
         }
     }
 
-    packagingOptions {
-        exclude 'org/apache/commons/codec/**'
-    }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-}
-
-dependencies {
-    implementation 'commons-codec:commons-codec:1.16.0'
 }
